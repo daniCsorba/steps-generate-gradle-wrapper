@@ -1,9 +1,24 @@
 title: Generate Gradle Wrapper
 summary: Generates Gradle Wrapper if it doesn't already exist
 description: |-
-  Generates Gradle Wrapper if it doesn't already exist.
+  This Step generates a Gradle Wrapper if it doesn't already exist. This will be stored as an env var in `$GRADLEW_PATH`, which you can use for other Steps in your Workflow, such as the **Gradle Runner**.
   
-  The gradlew file will be generated into the same directory where your root build.gradle file exists.
+  The `gradlew` file will be generated into the same directory where your root `build.gradle` file exists.
+
+  ### Configuring the Step
+
+  1. Make sure the **Project root directory** input points to the root directory of your project.
+  1. In the **Gradle version to use to generate the wrapper.**, set the Gradle version. 
+
+  ### Useful links
+  
+  * [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html)
+
+  ### Related Steps
+
+  * [Gradle Unit Test](https://www.bitrise.io/integrations/steps/gradle-unit-test)
+  * [Gradle Runner](https://www.bitrise.io/integrations/steps/gradle-runner)
+
 website: https://github.com/bitrise-steplib/steps-generate-gradle-wrapper
 source_code_url: https://github.com/bitrise-steplib/steps-generate-gradle-wrapper
 support_url: https://github.com/bitrise-steplib/steps-generate-gradle-wrapper/issues
